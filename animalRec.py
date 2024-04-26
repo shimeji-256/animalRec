@@ -341,7 +341,7 @@ for epoch in range(n_epochs):
         if y_data.dim()==1:
             y_data = paddle.unsqueeze(y_data, axis=1)
         logits = model(x_data)
-        # print("43_y_data.shape",y_data.shape)
+        print(y_data)
         loss = criterion(logits, y_data)
         acc = paddle.metric.accuracy(logits, y_data)
         accuracy_manager.update(acc)
