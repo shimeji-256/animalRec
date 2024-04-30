@@ -26,7 +26,6 @@ train_tfm = transforms.Compose([
     transforms.ColorJitter(0.2, 0.2, 0.2),
     transforms.RandomResizedCrop(128),
     transforms.RandomHorizontalFlip(),
-    transforms.RandomVerticalFlip(),
     transforms.RandomRotation(30),
 
     transforms.ToTensor(),
